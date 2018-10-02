@@ -1,0 +1,13 @@
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\bin\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.deps.json
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\bin\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.dll
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.csprojAssemblyReference.cache
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.csproj.CoreCompileInputs.cache
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.App.xaml.g.cs
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.Views.MainPage.xaml.g.cs
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.AssemblyInfoInputs.cache
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.AssemblyInfo.cs
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\bin\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.pdb
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.Views.BaseTabbedPage.xaml.g.cs
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.Views.CurrentOutages.xaml.g.cs
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.dll
+C:\Users\MattN\source\repos\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\SCEPrismAzureMVVMPrototype\obj\Debug\netstandard2.0\SCEPrismAzureMVVMPrototype.pdb

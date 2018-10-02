@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SCEPrototype.Views.FieldCrewUpdateForm"  Title="{Binding Title}">
+    <StackLayout VerticalOptions="StartAndExpand" Margin="0,10,0,0"
+                >
+        <Image Source="logo.png" Aspect="AspectFit" Margin="0,0,0,75"
+               />
+        <Frame CornerRadius="0" HasShadow="False" OutlineColor="Silver">
+            <StackLayout>
+                <Label Text="Select Arrival Time"></Label>
+              
+                <TimePicker x:Name="TPDemo" VerticalOptions="CenterAndExpand" />
+                <Label Text="Restoration Start/Completion Time"></Label>
+                <StackLayout Orientation="Horizontal">
+                    <TimePicker x:Name="Start" VerticalOptions="CenterAndExpand" />
+                    <Label Text="-"></Label>
+                    <TimePicker x:Name="End" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <Entry Text="{Binding DelayReason}" 
+               Placeholder="Delay Reason (if any)"
+               TextColor="{StaticResource blueColor}"
+              />
+                <Button
+                Margin="0,25,0,0"
+                Text="Submit Work Order"
+                    TextColor="White"
+                Command="{Binding SubmitCommand}"
+                BackgroundColor="DodgerBlue"/>
+            </StackLayout>
+        </Frame>
+        <Label x:Name="messageLabel" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:CustomRenderers="clr-namespace:SCEPrototype.CustomRenderers"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SCEPrototype.Views.AddOutage">
+    <StackLayout VerticalOptions="StartAndExpand" Margin="0,10,0,0"
+                >
+        <Image Source="logo.png" Aspect="AspectFit" Margin="0,0,0,75"
+               />
+        <Frame CornerRadius="0" BackgroundColor="LightGray" HasShadow="False" OutlineColor="Silver">
+            <ScrollView>
+
+                <StackLayout>
+
+                    <CustomRenderers:BorderLessEntryCustomRender Placeholder="Outage Number" Text="{Binding OutageNumber}" TextColor="{StaticResource blueColor}"></CustomRenderers:BorderLessEntryCustomRender>
+                    <CustomRenderers:BorderLessEntryCustomRender Placeholder="Outage Location" Text="{Binding OutageLocation}" TextColor="{StaticResource blueColor}"></CustomRenderers:BorderLessEntryCustomRender>
+                    <CustomRenderers:BorderLessEntryCustomRender Placeholder="Customers Impacted" Text="{Binding CustomersImpacted}" TextColor="{StaticResource blueColor}"></CustomRenderers:BorderLessEntryCustomRender>
+
+                    <CustomRenderers:BorderLessEntryCustomRender Placeholder="Outage Start Time" Text="{Binding OutageStartTime}" TextColor="{StaticResource blueColor}"></CustomRenderers:BorderLessEntryCustomRender>
+                    <CustomRenderers:BorderLessEntryCustomRender Placeholder="Outage Type" Text="{Binding OutageType}" TextColor="{StaticResource blueColor}"></CustomRenderers:BorderLessEntryCustomRender>
+                    <CustomRenderers:BorderLessEntryCustomRender Placeholder="Outage Reaspn" Text="{Binding OutageReasoning}" TextColor="{StaticResource blueColor}"></CustomRenderers:BorderLessEntryCustomRender>
+                  
+                    <Button x:Name="OutageButton"
+                Margin="0,25,0,0"
+                Text="Add Outage"
+                    TextColor="White"
+                Command="{Binding SubmitCommand}"
+                BackgroundColor="DodgerBlue"/>
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+    </StackLayout>
+</ContentPage>

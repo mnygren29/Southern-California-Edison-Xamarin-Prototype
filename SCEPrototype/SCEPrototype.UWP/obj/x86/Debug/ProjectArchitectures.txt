@@ -1,0 +1,1 @@
+C:\Users\MattN\source\repos\SCEPrototype\SCEPrototype\SCEPrototype.UWP\SCEPrototype.UWP.csproj;x86

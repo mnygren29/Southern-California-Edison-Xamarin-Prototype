@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behaviors1="clr-namespace:SCEPrototype.Behaviors"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SCEPrototype.Views.CurrentOutages"  Title="{Binding Title}">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"/>
+    </ContentPage.Padding>
+
+    <StackLayout VerticalOptions="StartAndExpand" Margin="0,10,0,0"
+                >
+        <Image Source="logo.png" Aspect="AspectFit" Margin="0,0,0,50"
+               >
+          
+        </Image>
+
+
+        <Grid Padding="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label  Grid.Column="0" Grid.Row="0" Text="LOCATION" FontSize="Small"/>
+            <Label  Grid.Column="1" Grid.Row="0" Text="CUSTOMERS IMPACTED" FontSize="Small"/>
+            <!--<Label Grid.Column="2" Grid.Row="0" Text="OUTAGE TYPE" FontSize="Small"/>-->
+        </Grid>
+        <ListView ItemsSource="{Binding Outages}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"></RowDefinition>
+                                <RowDefinition Height="20"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                           
+                            <Label  Grid.Column="0" Grid.Row="1" Text="{Binding OutageLocation}"/>
+                            <Label  Grid.Column="1" Grid.Row="1" Text="{Binding CustomersImpacted}"/>
+                            <!--<Label Grid.Column="2" Grid.Row="1" Text="{Binding OutageType}"/>-->
+                        </Grid>
+
+
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <!--<ListView ItemsSource="{Binding Outages}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"></RowDefinition>
+                                <RowDefinition Height="20"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Text="Outage Location" TextColor="DodgerBlue" LineBreakMode="TailTruncation"></Label>
+                            <Label Grid.Row="0" Grid.Column="1" Text="# Impacted" Font="Small"  TextColor="DodgerBlue" LineBreakMode="TailTruncation"></Label>
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding OutageLocation}" TextColor="Gray"  LineBreakMode="TailTruncation"></Label>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding CustomersImpacted}" Font="Small"  TextColor="Gray" LineBreakMode="TailTruncation"></Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+            <!--<Grid>
+            <Grid Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="25"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Column="0" Grid.Row="0" Text="LOCATION" FontSize="Small"/>
+                <Label  Grid.Column="1" Grid.Row="0" Text="CUSTOMERS IMPACTED" FontSize="Small"/>
+                <Label Grid.Column="2" Grid.Row="0" Text="OUTAGE TYPE" FontSize="Small"/>
+
+            </Grid>
+        </Grid>
+
+        <ListView ItemsSource="{Binding Outages}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                            <Grid>
+                                <Label  Grid.Column="0" Grid.Row="0" Text="{Binding OutageLocation}"/>
+                                <Label  Grid.Column="1" Grid.Row="0" Text="{Binding CustomersImpacted}"/>
+                                <Label Grid.Column="2" Grid.Row="0" Text="{Binding OutageType}"/>
+                        </Grid>
+
+
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>-->
+    </StackLayout>
+
+    <!--<StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+
+        <ListView ItemsSource="{Binding Outages}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                       
+                        <Label Text="{Binding OutageNumber}" FontAttributes="Bold" />
+                        <Label Grid.Column="1" Text="{Binding Age}" />
+                        <Label Grid.Column="2" Text="{Binding Location}" />
+                    </Grid>
+
+                    <TextCell Text="{Binding OutageNumber }" TextColor="Green" DetailColor="PaleVioletRed" Detail="{Binding OutageLocation }"></TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>-->
+</ContentPage>
